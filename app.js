@@ -2,7 +2,16 @@
 
 //var storyLoadData = require('storyData');
 //Uncomment later storyLoadData.loadData();
-
+/*
+ * 	top: 500,
+	bottom: 0,
+	left: 0,
+	right: 0,
+	width: "100%", 
+	height : 70,
+	textAlign: "center",
+	font: {fontSize:20, fontWeight:'bold'},
+ */
 var storyContents = require('storyContents');
 
 var mainStory = storyContents.mainStory;
