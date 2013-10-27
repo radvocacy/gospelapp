@@ -261,7 +261,7 @@ var language_story_param = {
 				{text:"Français", top:"70%", left:"25%", path:mainStory},
 				{text:"العربية", top:"50%", left:"75%", path:mainStory},
 				{text:"Pусский", top:"60%", left:"75%", path:mainStory},
-				{text:"Türk", top:"70%", left:"75%", path:mainStory}
+				{text:"Türkçe", top:"70%", left:"75%", path:mainStory}
 			]
 };
 
