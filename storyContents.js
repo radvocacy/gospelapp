@@ -1,7 +1,7 @@
 var storyModule = require('storyUtils');
 
 /*
- * LAST PANES!
+ * LAST PANES
  */
 
 
