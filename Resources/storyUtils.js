@@ -126,7 +126,7 @@ function createNewWindow(pStoryObj) {
 	  right: pStoryObj.right,
 	  width: pStoryObj.width, 
 	  height : pStoryObj.height,
-	  font: pStoryObj.font ? pStoryObj.font : {fontSize:20, fontWeight:'bold'},
+	  font: pStoryObj.font ? pStoryObj.font : {fontSize:30, fontFamily:'HelveticaNeue-Light'},
 	  color: pStoryObj.color,
 	  textAlign: pStoryObj.textAlign,
 	  text: pStoryObj.text

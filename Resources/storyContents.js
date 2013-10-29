@@ -147,6 +147,10 @@ var panel2_q_param = {
 	value: "Believer",
 	text:"How does someone go to Heaven?",
 	color:"white",
+	width: "40%",
+	right: 0,
+	top: "10%",
+	font: {fontSize: 48, fontWeight: 100},
 	paths:[{text:"Do more good than bad", top:"70%",left:"85%", path:panel5_s},
 		   {text:"Insallah", top:"75%",left:"85%",path:panel6_s},
 		   {text:"God needs to help me", top:"80%",left:"85%",path:panel7_s}]
@@ -159,8 +163,11 @@ var panel2_s_param = {
 	backgroundColor: "green",
 	backgroundImage: "images/Panel2.jpg",
 	value: "Believer",
-	text:"Heaven is a place without problems. It is a place that is full of love and joy, and where we are at peace, forever, if we are privileged to get in. \n Hell is the place for those who have rebelled against God. Those who have sinned and cannot be near his holiness. It is a place of punishment, forever. \n Heaven is where we hope we go.",
+	text:"Heaven is a place without problems. It is a place that is full of love and joy, and where we are at peace, forever, if we are privileged to get in. \n\n Hell is the place for those who have rebelled against God. Those who have sinned and cannot be near his holiness. It is a place of punishment, forever. \n\n Heaven is where we hope we go.",
 	color:"white",
+	right: 0,
+	width: "50%",
+	font: {fontSize: 26, fontWeight: 100},
 	paths:[{text:"Next", top:"75%", left: "75%", path:panel2_q}]	
 };
 var panel2_s = storyModule.createStory(panel2_s_param);
@@ -242,26 +249,40 @@ var main_story_param = {
 	value: null,
 	text:"What do you believe happens after we die?",
 	color:"white",
-	paths: [{text:"Heaven or Hell", top:"70%",left:"85%",path:panel2_s},
-			{text:"Reincarnation", top:"75%",left:"85%",path:panel3_s},
+	top: "10%",
+	width: "80%",
+	left: "10%",
+	font: {fontSize: 36},
+	paths: [{text:"Heaven or Hell", top:"60%",left:"85%",path:panel2_s},
+			{text:"Reincarnation", top:"70%",left:"85%",path:panel3_s},
 			{text:"Nothing", top:"80%",left:"85%",path:panel4_s}]
 };
 var mainStory = storyModule.createStory(main_story_param);
 
 var language_story_param = {
 	template:			"x",
-	backgroundColor:		"black",
-	backgroundImage:	null,
+	backgroundColor:	"#efd",
+	backgroundImage:	"images/PanelLang.jpg",
 	value:				null,
 	text:				"Language?",
-	color:				"white",
+	color:				"black",
+	top: 				"20%",
+	right:				"50%",
+	width: 				"50%", 
+	height : 			"80%",
+	textAlign: 			"center",
+	font: {
+			fontSize:50,
+			fontWeight:'100',
+			fontFamily:'HelveticaNeue-Light'
+			},
 	paths:	[
 				{text:"English", top:"50%", left:"25%", path:mainStory},
-				{text:"بودن", top:"60%", left:"25%", path:mainStory},
-				{text:"Français", top:"70%", left:"25%", path:mainStory},
-				{text:"العربية", top:"50%", left:"75%", path:mainStory},
-				{text:"Pусский", top:"60%", left:"75%", path:mainStory},
-				{text:"Türkçe", top:"70%", left:"75%", path:mainStory}
+				//{text:"بودن", top:"60%", left:"25%", path:mainStory},
+				// {text:"Français", top:"70%", left:"25%", path:mainStory},	
+				{text:"العربية", top:"60%", left:"75%", path:mainStory},
+				// {text:"Pусский", top:"60%", left:"75%", path:mainStory},
+				{text:"Türk", top:"70%", left:"75%", path:mainStory}
 			]
 };
 
